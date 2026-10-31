@@ -1,0 +1,33 @@
+#!/sbin/sh
+# 安装入口：优先走 Magisk 原生安装器；没有 Magisk 环境（如 APatch）时走通用安装。
+OUTFD=$2
+ZIPFILE=$3
+
+if [ -f /data/adb/magisk/util_functions.sh ]; then
+    mount /data 2>/dev/null
+    . /data/adb/magisk/util_functions.sh
+    install_module
+    exit 0
+fi
+
+# ---------- 通用安装（APatch 等） ----------
+MODID=huawei_onekey
+MODPATH=/data/adb/modules/$MODID
+
+mkdir -p "$MODPATH" 2>/dev/null
+unzip -o "$ZIPFILE" -d "$MODPATH" >/dev/null 2>&1
+rm -rf "$MODPATH/META-INF"
+
+ui_print() {
+    echo "$1"
+    echo "ui_print $1" >&"$OUTFD" 2>/dev/null
+}
+
+export MODPATH
+ARCH=$(getprop ro.product.cpu.abi)
+API=$(getprop ro.build.version.sdk)
+export ARCH API
+
+sh "$MODPATH/customize.sh"
+
+exit 0

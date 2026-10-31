@@ -1,0 +1,31 @@
+# ---- 构建产物 ----
+dist/
+lsp-app/dist/
+lsp-app/build/res/
+lsp-app/build/gen/
+lsp-app/build/classes/
+lsp-app/build/dex1/
+lsp-app/build/dex2/
+lsp-app/build/pkg/
+lsp-app/build/smali/
+lsp-app/build/m2/
+lsp-app/build/libs/
+lsp-app/build/aarres/
+lsp-app/build/module_out/
+lsp-app/build/*.apk
+lsp-app/build/*.txt
+lsp-app/build/aarres.txt
+
+# ---- 敏感文件（keystore 绝不入库）----
+*.jks
+*.keystore
+*.idsig
+key.properties
+
+# ---- 系统垃圾 ----
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.sed*
+sed??????

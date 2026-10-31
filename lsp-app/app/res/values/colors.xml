@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MD3 基线配色（Google 蓝） -->
+    <color name="md_primary">#FF0B57D0</color>
+    <color name="md_on_primary">#FFFFFFFF</color>
+    <color name="md_primary_container">#FFD3E3FD</color>
+    <color name="md_on_primary_container">#FF041E49</color>
+    <color name="md_secondary">#FF565E71</color>
+    <color name="md_secondary_container">#FFDAE2F9</color>
+    <color name="md_on_secondary_container">#FF131C2B</color>
+
+    <color name="md_surface">#FFFFFFFF</color>
+    <color name="md_bg">#FFF7F9FC</color>
+    <color name="md_on_surface">#FF1A1C1E</color>
+    <color name="md_on_surface_variant">#FF44474E</color>
+    <color name="md_outline">#FF74777F</color>
+    <color name="md_outline_variant">#FFC4C6D0</color>
+    <color name="md_error">#FFB3261E</color>
+
+    <!-- 状态点 -->
+    <color name="ok">#FF1E8E3E</color>
+</resources>

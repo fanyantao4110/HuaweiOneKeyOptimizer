@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.onekey.optimizer"
+    android:versionCode="27"
+    android:versionName="1.0.26">
+
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33" />
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.huawei.onekey.optimizer.ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <!-- 桌面入口：单独做成 activity-alias，「隐藏桌面图标」开关只启用/禁用这个别名，
+             应用本体（MainActivity）始终保持可用，设置里的「打开」与 adb am start 都能恢复 -->
+        <activity-alias
+            android:name="com.huawei.onekey.optimizer.LauncherEntry"
+            android:targetActivity="com.huawei.onekey.optimizer.ui.MainActivity"
+            android:exported="true"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- 兜底入口：带 CATEGORY_INFO 的 MAIN 入口，不会出现在桌面上，
+             但能让 PackageManager#getLaunchIntentForPackage 永远返回非空 ——
+             所以图标隐藏后，「LSPosed 模块列表 → 打开」和「设置 → 应用管理 → 打开」依然可用 -->
+        <activity-alias
+            android:name="com.huawei.onekey.optimizer.InfoEntry"
+            android:targetActivity="com.huawei.onekey.optimizer.ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- ===== 高级设置（二级界面）===== -->
+        <activity
+            android:name="com.huawei.onekey.optimizer.ui.AdvancedActivity"
+            android:exported="false"
+            android:label="@string/adv_title"
+            android:parentActivityName="com.huawei.onekey.optimizer.ui.MainActivity" />
+
+        <!-- ===== Xposed / LSPosed 模块声明 ===== -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="华为设备一键优化：安装器净化 / 主题解锁 / 应用跳转解锁 / 平行视界 / 应用分身 / 系统调优，全部可在应用内单独开关。" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+    </application>
+</manifest>
