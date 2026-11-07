@@ -1,0 +1,29 @@
+# ===== 构建产物 =====
+lsp-app/build/res/
+lsp-app/build/res_lib/
+lsp-app/build/gen/
+lsp-app/build/classes/
+lsp-app/build/dex1/
+lsp-app/build/dex2/
+lsp-app/build/pkg/
+lsp-app/build/smali/
+lsp-app/build/jadx_out/
+lsp-app/build/module_out/
+lsp-app/build/libs/
+lsp-app/build/aarres/
+lsp-app/build/m2/
+lsp-app/build/*.apk
+lsp-app/build/*.idsig
+lsp-app/build/*.txt
+lsp-app/build/*.zip
+lsp-app/dist/
+dist/
+
+# ===== 签名私钥：绝对不要提交（缺失时 02_apk.sh 会自动生成）=====
+onekey.jks
+*.jks
+
+# ===== 杂项 =====
+tmp/
+__pycache__/
+*.pyc

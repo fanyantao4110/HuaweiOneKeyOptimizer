@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2026 fanyantao
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+附加说明（Additional Notice）
+
+1. 本项目仅通过运行时注入（Xposed / LSPosed）与系统属性、脚本修改实现功能，
+   仓库与发布产物中均不包含任何华为技术有限公司的官方应用、dex、资源或私有配置文件。
+2. 本项目与华为技术有限公司无任何关联，未获其授权或背书。
+3. 主题、字体、壁纸等内容的版权归各自作者与华为所有；本项目仅作用于客户端侧的
+   试用判定逻辑，不提供任何绕过付费获取资源的途径，请购买正版以支持作者。
+4. 使用 Root / Xposed 类工具修改系统行为存在设备损坏、数据丢失与保修失效的风险，
+   请自行评估并承担全部后果。若不同意以上任一条款，请勿使用本项目。

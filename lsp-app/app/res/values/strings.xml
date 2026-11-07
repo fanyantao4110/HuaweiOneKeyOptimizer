@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">华为一键优化</string>
+    <string name="title">华为设备一键优化</string>
+
+    <string name="status_title">运行环境</string>
+    <string name="status_root_ok">Root：已授权</string>
+    <string name="status_root_no">Root：未授权（系统层开关不可用）</string>
+    <string name="status_xposed_ok">LSPosed：已激活</string>
+    <string name="status_xposed_no">LSPosed：未激活（Hook 开关不生效）</string>
+    <string name="status_module_ok">Magisk 模块：已安装</string>
+    <string name="status_module_no">Magisk 模块：未安装（系统层开关不可用）</string>
+
+    <string name="group_install">应用安装器净化</string>
+    <string name="group_theme">主题解锁</string>
+    <string name="group_scope">系统限制解锁</string>
+    <string name="group_gesture">桌面手势</string>
+    <string name="sw_doubletap_title">双击锁屏</string>
+    <string name="sw_doubletap_desc">在桌面空白处快速双击即可熄屏。Hook 实现，不修改系统 APK，可随时开关</string>
+    <string name="group_apps">系统应用增强</string>
+    <string name="sw_seconds_title">状态栏长按显示秒</string>
+    <string name="sw_seconds_desc">默认不显示秒；长按状态栏左侧时间即可切换显示秒数，再长按恢复（Hook，不改 SystemUI）</string>
+
+    <string name="sw_accskip_title">跳过无障碍授权倒计时</string>
+    <string name="sw_accskip_desc">去掉开启无障碍服务时的10秒读秒与勾选门槛，直接点“开启”即可（Hook，不改 Settings.apk）</string>
+    <string name="sw_timeout_title">屏幕休眠 20/30/60 分钟</string>
+    <string name="sw_timeout_desc">设置 → 显示和亮度 → 屏幕休眠 新增 20/30/60 分钟档位（Hook，不改 Settings.apk）</string>
+    <string name="sw_badge_title">去除管控角标</string>
+    <string name="sw_badge_desc">去掉应用分身 / 隐私空间等「管控」应用图标上的警告角标</string>
+    <string name="sw_appdetails_title">长按气泡「应用详情」</string>
+    <string name="sw_appdetails_desc">长按桌面图标后的气泡菜单里增加一项「应用详情」，可直接跳转系统应用信息页</string>
+
+    <string name="adv_back">返回</string>
+    <string name="btn_advanced">桌面高级设置</string>
+    <string name="adv_title">桌面高级设置</string>
+    <string name="adv_note">这些是桌面布局 / 交互的实验性改动，默认全部关闭；主页的「一键全开」不会改动这里。切换后需重启桌面（或重启系统）才生效。</string>
+    <string name="adv_group_layout">布局与网格</string>
+    <string name="adv_cells_title">新增布局 7×5 / 8×5</string>
+    <string name="adv_cells_desc">在桌面设置 → 布局里多出 7×5、8×5 两种网格（追加在末尾，不改原有布局）</string>
+    <string name="adv_dedupe_title">布局去重</string>
+    <string name="adv_dedupe_desc">布局列表去重，并剔除会与 dock 冲突的 7×6 / 8×6</string>
+    <string name="adv_group_ui">桌面与抽屉</string>
+    <string name="adv_drawer_title">抽屉去应用建议</string>
+    <string name="adv_drawer_desc">抽屉顶部不再显示「应用建议」（预测应用）那一栏</string>
+    <string name="adv_dock_title">dock 自适应 11 / 8</string>
+    <string name="adv_dock_desc">横屏 dock 最多 11 个图标，竖屏 8 个（跟随屏幕方向自动切换）</string>
+    <string name="adv_portrait_title">竖屏保留右侧</string>
+    <string name="adv_portrait_desc">竖屏时 dock 图标靠右侧对齐显示，不再挤在左边</string>
+    <string name="adv_notext_title">无字模式</string>
+    <string name="adv_notext_desc">桌面图标与文件夹名称都不显示文字</string>
+    <string name="adv_card_title">大文件夹服务卡片入口</string>
+    <string name="adv_card_desc">恢复大文件夹 / 服务卡片相关入口（不会再显示成「窗口小工具」）</string>
+    <string name="adv_form_title_title">服务卡片标题无字</string>
+    <string name="adv_form_title_desc">服务卡片（卡片堆叠）顶部的标题文字不显示</string>
+    <string name="btn_restart_launcher">重启桌面</string>
+    <string name="group_perf">系统与体验</string>
+    <string name="group_window">自由窗口与多任务</string>
+    <string name="sw_installer_title">安装器净化</string>
+    <string name="sw_installer_desc">跳过华为应用市场校验、广告与推荐位，安装纯 APK 不再被拦截</string>
+
+
+    <string name="sw_theme_title">主题试用解锁</string>
+    <string name="sw_theme_desc">解除主题商店付费 / 试用限制，主题可长期使用</string>
+
+    <string name="sw_mxx_title">系统限制解锁</string>
+    <string name="sw_mxx_desc">解除 system_server 内的 Mxx 策略限制（跳转 / 安装管控），作用域需勾选“系统框架”</string>
+
+    <string name="sw_parallel_title">全应用平行视界</string>
+    <string name="sw_parallel_desc">为未适配的第三方应用自动启用平行视界（分屏双栏）</string>
+
+    <string name="sw_clone_title">全应用分身</string>
+    <string name="sw_clone_desc">把所有第三方应用加入应用分身白名单，无需逐个授权</string>
+
+    <string name="sw_freeform_title">小窗数量解锁</string>
+    <string name="sw_freeform_desc">解除小窗数量限制（hw_mc.freeform.max_num=64），可同时开多个悬浮小窗</string>
+    <string name="sw_meminfo_title">多任务显示内存</string>
+    <string name="sw_meminfo_desc">后台多任务界面显示内存占用（ro.config.hide_meminfo=false），需重启系统生效</string>
+
+    <string name="btn_all_on">一键全开</string>
+    <string name="btn_all_off">全部关闭</string>
+    <string name="btn_apply">应用并立即生效</string>
+    <string name="btn_reboot">重启系统</string>
+
+    <string name="toast_saved">已保存，正在应用…</string>
+    <string name="toast_no_root">未获得 Root 权限，系统层设置无法应用</string>
+    <string name="toast_applied">系统层设置已应用</string>
+    <string name="toast_apply_fail">应用失败：</string>
+    <string name="toast_need_module">未检测到 Magisk 模块，请先刷入模块压缩包</string>
+    <string name="toast_rebooting">系统将在 2 秒后重启…</string>
+    <string name="reboot_title">重启系统</string>
+    <string name="reboot_message">平行视界、小窗数量、多任务内存显示等选项只在系统启动时被读取一次，必须重启整机才会生效。\n\n现在重启吗？</string>
+    <string name="reboot_ok">立即重启</string>
+    <string name="reboot_cancel">稍后</string>
+
+    <string name="footer_tip">提示：Hook 类开关切换后需重新打开目标应用（或重启）；系统层开关（平行视界 / 应用分身 / 小窗数量 / 多任务内存显示）点“应用并立即生效”后写入，但多数项要重启整机才真正生效。\n全部功能在本机执行，不收集任何数据。</string>
+
+    <string name="log_title">执行日志</string>
+    <string name="log_empty">暂无日志</string>
+    <!-- ===== 桌面模糊（ColorOS 风格）===== -->
+    <string name="group_blur">桌面模糊</string>
+    <string name="sw_blur_title">软件打开/关闭模糊</string>
+    <string name="sw_blur_desc">打开 / 关闭应用时，图标层、Dock 栏与壁纸背景一起模糊；一个开关全部生效，下方滑条调节程度</string>
+    <string name="blur_level_title">模糊程度</string>
+    <string name="blur_level_desc">数值越大越糊；调完下一个转场立即生效</string>
+    <string name="blur_level_value">%1$d / 100</string>
+
+    <!-- ===== 隐藏桌面图标 ===== -->
+    <string name="group_misc">桌面图标</string>
+    <string name="sw_hideicon_title">隐藏桌面图标</string>
+    <string name="sw_hideicon_desc">把本应用从桌面移除，桌面更清爽；随时在本页关掉开关即可恢复</string>
+    <string name="hideicon_dialog_title">隐藏桌面图标？</string>
+    <string name="hideicon_dialog_msg">隐藏后桌面上就没有「华为一键优化」了。下面任意一种方式都能重新进到本页（应用本体始终保持可用）：\n\n1. LSPosed → 模块 → 华为一键优化 → 打开\n2. 设置 → 应用和服务 → 应用管理 → 华为一键优化 → 打开\n3. 终端 / adb：\n  su -c am start -n com.huawei.onekey.optimizer/.ui.MainActivity\n\n进到本页后，把「隐藏桌面图标」开关关掉即可恢复图标。</string>
+    <string name="hideicon_dialog_ok">隐藏</string>
+    <string name="hideicon_dialog_cancel">取消</string>
+    <string name="toast_icon_hidden">已隐藏桌面图标</string>
+    <string name="toast_icon_shown">桌面图标已恢复</string>
+    <string name="toast_icon_fail">操作失败：桌面入口组件未找到</string>
+    <!-- ===== 控制中心音量条（原 CCVolume 模块整合）===== -->
+    <string name="sw_ccvolume_title">控制中心音量条</string>
+    <string name="sw_ccvolume_desc">在控制中心亮度条下方加一根音量条，拖动直接调媒体音量；开关切换后需重启 SystemUI</string>
+    <!-- ===== 灵动岛（LiveIsland 整合版）===== -->
+    <string name="group_island">灵动岛</string>
+    <string name="sw_island_title">状态栏灵动岛</string>
+    <string name="sw_island_desc">在状态栏画一颗鸿蒙灵动岛：音乐、导航、实况胶囊、秒表、USB、充电提示。开关即时生效，无需重启</string>
+    <string name="island_bg_title">背景样式</string>
+    <string name="island_bg_desc">毛玻璃会透出身后的界面颜色；纯黑更省电、字更清楚</string>
+    <string name="island_bg_frosted">毛玻璃</string>
+    <string name="island_bg_black">纯黑</string>
+    <string name="island_follow_title">背景自动反色</string>
+    <string name="island_follow_desc">按背景亮度自动切换字体颜色（亮底深字 / 暗底白字）</string>
+    <string name="island_media_title">音乐</string>
+    <string name="island_media_desc">任意播放器都能上岛，展开可上一首 / 播放 / 下一首</string>
+    <string name="island_nav_title">导航</string>
+    <string name="island_nav_desc">百度 / 高德地图：转向箭头、剩余距离、路名</string>
+    <string name="island_capsule_title">实况通知</string>
+    <string name="island_capsule_desc">外卖、打车、录音等实况胶囊，可直接点操作按钮</string>
+    <string name="island_stopwatch_title">秒表</string>
+    <string name="island_stopwatch_desc">华为时钟的秒表直接上岛，可暂停 / 重置</string>
+    <string name="island_usb_title">USB</string>
+    <string name="island_usb_desc">插线自动上岛，可切换文件传输 / 传输照片 / 仅充电</string>
+    <string name="island_charge_title">充电提示</string>
+    <string name="island_charge_desc">插电显示充电环，低电量弹电池图标</string>
+    <string name="island_flash_title">手电筒</string>
+    <string name="island_flash_desc">开关手电筒时在岛上显示状态图标</string>
+    <string name="island_record_title">录屏</string>
+    <string name="island_record_desc">录屏进行中显示上岛状态</string>
+    <string name="island_restart_title">重启系统界面</string>
+    <string name="island_restart_desc">升级模块后新代码要重启 SystemUI 才会加载；只重启系统界面，不重启整机</string>
+    <string name="island_restart_btn">重启系统界面</string>
+    <string name="toast_sysui_restarting">正在重启系统界面…</string>
+    <string name="island_preview_title">预览灵动岛</string>
+    <string name="island_preview_desc">推一条模拟外卖实况到岛上，确认显示效果（在桌面 / 非目标应用前台时才能看到）</string>
+    <string name="island_preview_btn">预览</string>
+    <string name="toast_island_preview">已推送预览，回桌面看看状态栏</string>
+</resources>

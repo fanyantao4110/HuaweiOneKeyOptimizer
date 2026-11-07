@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LSPosed 作用域提示：LSPosed 仅把建议值展示给用户，实际仍需手动勾选 -->
+    <string-array name="xposed_scope">
+        <item>android</item>
+        <item>com.android.packageinstaller</item>
+        <item>com.huawei.appmarket</item>
+        <item>com.huawei.android.thememanager</item>
+        <item>com.huawei.systemmanager</item>
+        <item>com.huawei.android.launcher</item>
+        <item>com.android.settings</item>
+        <item>com.android.systemui</item>
+        <!-- 灵动岛相关（可选）：导航上报 / 秒表上报 / USB 弹窗接管 -->
+        <item>com.baidu.BaiduMap</item>
+        <item>com.autonavi.minimap</item>
+        <item>com.huawei.deskclock</item>
+    </string-array>
+</resources>
